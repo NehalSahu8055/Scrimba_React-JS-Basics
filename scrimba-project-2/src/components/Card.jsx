@@ -1,34 +1,45 @@
-const Card = (props) => {
+// destructuring props 
+
+
+const Card = ({src, rating, starCount, country, caption, price, openSpots}) => {
+  let badgeText;
+  if (openSpots == "0") {
+      badgeText = "SOLD OUT"
+  } 
+  else {
+    badgeText = "ONLINE"
+}
+  
   return (
     <div className="card flex items-center justify-center text-xs">
       <figure className="fig-1 relative flex flex-col gap-3">
-        <button className="absolute right-2 top-2">
-          <img src="/heart.svg" alt="" />
-        </button>
+        <div className="absolute  right-2 top-2">
+          {badgeText && <div className="card-badge bg-white rounded-sm px-1">{badgeText}</div>}
+        </div>
         <img
-          className="rounded-lg"
-          src={props.src}
-          alt={props.alt}
+          className="rounded-lg h-[235px]"
+          src={src}
+          alt=""
           width={176}
           height={235}
         />
         <figcaption>
           <ul>
-            <li className="inline-flex gap-1 justify-center items-center">
+            <li key="0" className="inline-flex gap-1 justify-center items-center">
               <img src="/star.png" width={14} height={14} alt="" />
               <span>
-                {props.rating}
+                {rating}
                 <span className="pl-1 text-[#918E9B]">
-                  ({props.starCount}) • USA
+                  ({starCount}) • {country}
                 </span>
               </span>
             </li>
-            <li className="py-2">{props.caption}</li>
+            <li key="1" className="py-2">{caption}</li>
             <li>
-              <strong>From {props.price}</strong>
+              <strong>From ${price} </strong>
               <abbr className="no-underline" title="per">
                 /
-              </abbr>{" "}
+              </abbr>
               person
             </li>
           </ul>

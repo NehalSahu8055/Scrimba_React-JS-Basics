@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "v-build": "vite build",
-    "t-build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "v-prev": "vite preview"
+    "vbld": "vite build",
+    "vprev": "vite preview",
+    "tbld": "npx tailwindcss -i ./src/stylesheets/input.css -o ./src/stylesheets/output.css --watch",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "react": "^18.2.0",
