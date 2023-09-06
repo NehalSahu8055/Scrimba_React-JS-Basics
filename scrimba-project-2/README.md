@@ -2,8 +2,8 @@
 
 ### 🔗Links
 
-- **Solution URL:** [View Solution](https://github.com/NehalSahu8055/Code_Alpha/tree/master/Code_Alpha_Temperature-Converter-Website)
-- **Live Site URL:** [Try it Live](https://temp-converter-nehal.netlify.app/)
+- **Solution URL:** [View Solution](https://github.com/NehalSahu8055/Scrimba_React-JS-Basics/tree/master/scrimba-project-2)
+- **Live Site URL:** [Try it Live](https://clone-airbnb-nehal.netlify.app/)
 
 ### 🛠️ Built with
 
